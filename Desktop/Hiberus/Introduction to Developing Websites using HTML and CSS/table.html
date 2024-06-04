@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Tables</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <table border="1">
+      <caption>
+        Nutrition Information
+      </caption>
+      <!-- The first table row holds the header for each column -->
+      <tr>
+        <th>Food (raw,100 grams)</th>
+        <th>Protein (g)</th>
+        <th>Fats (g)</th>
+        <th>Carbs (g)</th>
+      </tr>
+      <!-- The second table row holds data. -->
+      <tr>
+        <td>Kale</td>
+        <td>3</td>
+        <td>1</td>
+        <td>10</td>
+      </tr>
+      <!-- The third table row holds data. -->
+      <tr>
+        <td>Spinach</td>
+        <td>3</td>
+        <td>0</td>
+        <td>4</td>
+      </tr>
+      <!-- The fourth table row holds data. -->
+      <tr>
+        <td>Broccoli</td>
+        <td>3</td>
+        <td>0</td>
+        <td>7</td>
+      </tr>
+    </table>
+    <!--Borders-->
+    <!--Try adding the border attribute to the table element and give it a value of 1  -->
+    <!-- <table border="1"> -->
+    <!--Spanning Columns -->
+    <!-- Example table with colspan -->
+    <br />
+    <table border="1">
+      <caption>
+        Evening Cooking Class Schedule
+      </caption>
+      <tr>
+        <th></th>
+        <th>5:30pm</th>
+        <th>6:oopm</th>
+        <th>6:30pm</th>
+        <th>7:00pm</th>
+        <th>7:30pm</th>
+        <th>8:00pm</th>
+        <th>8:30pm</th>
+        <th>9:00pm</th>
+      </tr>
+      <tr>
+        <th>Monday</th>
+        <td colspan="3">One Pot Dishes</td>
+        <td></td>
+        <td colspan="4">Cooking Local</td>
+      </tr>
+      <tr>
+        <th>Wednesday</th>
+        <td colspan="3">Baking Basics</td>
+        <td></td>
+        <td colspan="2">Appetizers</td>
+        <td colspan="2"></td>
+      </tr>
+      <tr>
+        <th>Friday</th>
+        <td colspan="4">Seasonal Favorites</td>
+        <td></td>
+        <td colspan="3">Desserts</td>
+      </tr>
+    </table>
+    <br />
+    <!--Spanning Rows-->
+
+    <table border="1">
+      <caption>
+        Evening Cooking Class Schedule
+      </caption>
+      <tr>
+        <th></th>
+        <th>Monday</th>
+        <th>Wednesday</th>
+        <th>Friday</th>
+      </tr>
+      <tr>
+        <th>5:30pm</th>
+        <td rowspan="3">One Pot Dishes</td>
+        <td rowspan="3">Baking Basics</td>
+        <td rowspan="4">Seasonal Favorites</td>
+      </tr>
+      <tr>
+        <th>6:00pm</th>
+      </tr>
+      <tr>
+        <th>6:30pm</th>
+      </tr>
+      <tr>
+        <th>7:00pm</th>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>7:30pm</th>
+        <td rowspan="4">Cooking Local</td>
+        <td rowspan="2">Appetizers</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>8:00pm</th>
+        <td rowspan="3">Desserts</td>
+      </tr>
+      <tr>
+        <th>8:30pm</th>
+        <td rowspan="2"></td>
+      </tr>
+      <tr>
+        <th>9:00pm</th>
+      </tr>
+    </table>
+
+    <!--Other Table Elements-->
+    <br>
+    <table border="1">
+      <caption>
+        Daily Temperatures (degrees F) for Redmond, Washington, May 2018
+      </caption>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Low</th>
+          <th>High</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>1</th>
+          <td>50</td>
+          <td>62</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>45</td>
+          <td>69</td>
+        </tr>
+        <!-- data rows for dates 3 to 29 go here -->
+        <tr>
+            <th>30</th>
+            <td>49</td>
+            <td>67</td>
+        </tr>
+        <tr>
+            <th>31</th>
+            <td>52</td>
+            <td>64</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <th>Averages</th>
+        <td>53</td>
+        <td>71</td>
+    </tfoot>
+    </table>
+  </body>
+</html>

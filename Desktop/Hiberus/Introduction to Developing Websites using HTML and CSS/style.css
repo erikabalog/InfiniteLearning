@@ -1,0 +1,260 @@
+/* CSS style sheet for MySite */
+/* CSS External Stylesheet */
+body {
+  background-color: lightgrey;
+}
+
+/* CSS Internal Stylesheet */
+/* In the <head> element, add a <style> element with a CSS rule for the body background color, like so: 
+<style> 
+body {background-color: tan} 
+</style> */
+
+/* CSS Inline Style  */
+/* <h1 style="background-color: blueviolet;">Welcome to my website.</h1> */
+
+/* CSS Color */
+p {
+  color: magenta;
+}
+
+/* RGB Color Values  */
+/* The minimum rgb value, rgb(0,0,0), indicates the absence of any light, which displays as the color black. */
+/* The maximum rgb value, rgb(255, 255, 255) gives you all three primary colors at their highest light intensity, which displays as white. */
+
+h1 {
+  color: rgb(0, 0, 255);
+  color: rgba(0, 255, 0);
+  color: rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+/* Alpha */
+/* When using RGB colors, there is an additional parameter, alpha, that you can use to control the opacity of a color. The RGBA alpha can have a value ranging from a minimum of 0.0 (for full transparency) to a maximum of 1.0 (for full opacity). */
+body {
+  background-color: rgba(0, 200, 255, 0.5);
+}
+
+/* Shades of Gray  */
+h1 {
+  color: rgb(0, 0, 0);
+  color: rgb(64, 64, 64);
+  color: rgb(128, 128, 128);
+  color: rgb(192, 192, 192);
+  color: rgb(255, 255, 255);
+}
+
+/* Hexadecimal Color Values  */
+/* Hexadecimal is a base-16 number system that uses the ten numerals of our everyday base-10 system (0,1,2,3,4,5,6,7,8,9) plus the first six letters of the alphabet (A,B,C,D,E,F). */
+h1 {
+  color: #0000ff;
+  color: #000000;
+  color: #ffffff;
+  color: #ff0000;
+  color: #ffa500;
+  color: #ffff00;
+  color: #00ff00;
+  color: #00ffff;
+}
+
+/* Applying color  */
+/*You can use the style tag inside an element to color individual words: 
+<p style = "color:rgb(0,255,0);">It's not easy being green.</p> */
+/* You can also apply a particular color to an entire class in a style sheet, either internal or external */
+.attention {
+  color: #ff0000;
+}
+
+/* CSS Text */
+/* Font */
+/* There are two main categories of font: serif and sans serif. Serif fonts have fancier ends on them and make it easier to read large blocks of text. Sans Serif fonts (the "sans" is French for "without") are easy to read when they are big. In general, use sans-serif fonts for headings, and serif fonts for the text content of your page. */
+
+/* Font-family  */
+/* The font-family specifies a number of options for the browser to try when it renders your page. It goes from specific to general. If your first choice of font is not displayable in the user's browser, the next, more general font will be tried, and if that font is not displayable, the third and most general font designated will be used. */
+/*font-family: "Times New Roman", "Times", serif; */
+
+/* Web Safe Fonts  */
+/* Web safe fonts are something to consider as not all browsers support all fonts. Web safe fonts are those fonts that most browsers support and can display. Use the keywords 'web safe fonts' in your favorite search engine to find the fonts that are currently considered 'web safe'. */
+
+/* Font-style (Font style controls whether your text is normal, or in italics for emphasis.) */
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+}
+/* <h1> My Website </h1> */
+
+/* Font-weight (Font weight controls whether your text is normal, or bold.) */
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+/* <h1> My Website </h1> */
+
+/* Font-size (Font size controls how big the text appears on your page. Although you can specify the font size in pixels, in general, it's better to use ems so that it displays relative to the user's default font size.) */
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+}
+
+/* Text (While the font attributes affect the way text appears, the text attributes have more to do with the positioning of the text on the page.) */
+/* Text-indent (Text-indent indents your text (or the first line of a paragraph) by the specified number of pixels.) */
+Example
+/* p {font-family: Arial, Helvetica, sans-serif; text-indent: 50px; font-style: italic;} */
+
+/* Text-align ( is something that anyone who has used a word processor is familiar with. Just as in a word processor, your text can be aligned left, right, center, or justified. Left justification is the default for languages which are read from left to right.) */
+Example 
+/* p {font-family: Arial, Helvetica, sans-serif; text-alignment: left; font-style: italic;} 
+p {font-family: Arial, Helvetica, sans-serif; text-alignment: right; font-style: italic;} 
+p {font-family: Arial, Helvetica, sans-serif; text-alignment: center; font-style: italic;}
+p {font-family: Arial, Helvetica, sans-serif; text-alignment: justify;}   */
+
+/* Text-decoration (Text-decoration is another way of formatting text that you may have used in a word processor. Text decoration can be given a value of underline, overline, line-through, or none. Often the 'none' value is given to remove default underlines under links.) */
+Example 
+/* p {font-family: Arial, Helvetica, sans-serif; text-decoration: line-through;} */
+
+/* Elements */
+/* The Box Model (The Box Model is how Web browsers keep track of individual HTML elements. Each element is comprised of 4 areas: the element, the padding, the border and the margin.) */
+
+/* Element (This is always contained within a square, even if it is a text block with jagged edges or a transparent image that isn't rectangular. Web browsers will impose a rectangle around the smallest area the HTML element's content actually occupies.) */
+
+/* Padding (This is the white space just outside the element's content. You can set each of the four sides independently, and you can set the value to 0. If you set the element's background color, that color will apply to the padding as well.)  */
+
+/* Border (This is the area just outside the padding. Most HTML elements' border default width is 0 and thus invisible. You can set each of the four sides independently. You can set a color, a pattern, even an image. This is a great way to add horizontal or vertical lines to an element on your page.) */
+/* Border has three main properties: style, width, and color */
+
+/* Border-style (Border-style declares the type of border to display. Some values for border-style are solid, dashed, dotted, and double. Border-style can have one, two, three, or four values that correspond in order to the top, right, bottom, and left borders of the box.) */
+Example 
+/* p {border-style: solid dashed dotted double;} 
+- If the border-style is given only three values, the first value will apply to the top border, the second value to the right and left borders and the third value to the bottom border. 
+- If the border-style is given two values, the first value will apply to the top and bottom borders and the second value to the right and left borders. 
+- If the border-style is given one value, that one value will be applied to all four borders: top, right, bottom, and left. 
+- The default value for border-style is "none". */
+
+/* Border-width (Border-width controls the width of the border and like border-style can also have one, two, three, or four values that correspond in order to the top, right, bottom, and left borders of the box. The width can be set using a unit of measurement such as px or em, or by using one of the following pre-defined values: thin, medium, thick.) */
+/* The default value for border-width is "medium". */
+
+/* Border-color (Border-color controls the color of the border and like the two other border properties described above can have one to four values corresponding to the four borders in the same way. Border-color can be set using a color name, RGB values, a hexadecimal number value, or have the value "transparent".) */
+/* The default value for border-color is the color of the element. */
+
+/* Margin (margin - This is the space surrounding an element, outside the border. Margins are the part of HTML elements that interact with one another. When two margins interact the larger of the two wins meaning the smaller margin "collapses", thus the actual space between two elements is the larger of the two, not the sum of the margins.) */
+
+
+/* Example of css code for box models */ 
+
+body {
+  background-color: #7cdbd5;
+}
+
+p {
+  background-color: #f9be02;
+}
+
+#five {
+  padding: 5px;
+  border: 5px #f53240 solid;
+  margin: 5px;
+}
+
+#ten {
+  padding: 10px;
+  border: 10px #f53240 solid;
+  margin: 10px;
+}
+
+#fifty {
+  padding: 50px;
+  border: 50px #f53240 solid;
+  margin: 50px;
+}
+
+#oneHundred {
+  padding: 100px;
+  border: 100px #f53240 solid;
+  margin: 100px;
+}
+
+/* CSS Layout */
+/* Positioning (Ideally, try to position your elements by first adjusting their alignment, padding, and margins. Much of the time, you'll be able to get the elements where you want them to be, and if you can't there are some other strategies you can use. In general, you will usually want some padding and margin around your element anyway, so you might as well adjust these before progressing onto more complicated positioning methods.) */
+
+/* Positioning with Alignment (One of the simplest ways to align text content within a block is to use the text alignment properties we introduced back in CSS Text. Recall that you can use text-align:center to center a line of text in its containing HTML element. You also can use text-align:left or text-align:right to align the text with the left or right side of the element respectively, or even use text-align:justify to justify a block of text.
+The text-align property sets the content's alignment horizontally, but it leaves its vertical alignment unchanged. Text lives within a specified vertical space, in which the text is drawn by default in the middle of that vertical space. If you change the height of the containing HTML block, the text will remain at the top of the block. However, if you instead use the line-height property, then the block will grow and the text will vertically center within it. ) */
+h1 {
+  line-height: 1.2;
+}
+/* Positioning with Padding ("Padding" is the white space that sits closest to an HTML element. Many elements already have a default padding defined. For example, ul elements by default are indented to the left a bit because they have a left padding.) */
+/* You can set the padding on an element's four sides independently using padding-top, padding-right, padding-bottom and padding-left. Or you can use the more compact padding: 10px 15px 20px 25px. In this case, the order of the numbers sets the top, right, bottom and left paddings. */
+p {
+  padding: 20px;
+}
+/* Positioning with Margins (Once you have set the width for your element, then you can set margins as a way to position your element relative to others. One of the most commonly used margin settings is "auto". That is because if you set an element's left and right margin to auto, it will be dynamically centered within its containing block.) */
+div {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* However, note that this only works for block HTML elements like paragraphs, divs and headers. If you want to use this to position an inline element, such as img or a, you will need to tell CSS to treat them as block elements by setting display: block; */
+img {
+  display: block;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Positioning with Float (If you are not able to get the results you want after adjusting the padding and margins, the float property can be a good option.) */
+h1 {
+  width: 20em;
+  float: right;
+}
+
+/* The float property liberates an element from its automatic position and lifts it up to "float" on top of other elements in the direction you specify.  You can specify float either right, left or the default of none.
+- Elements underneath a floating object will automatically wrap themselves around the content. For example, if you float an image, the text underneath will wrap around it so that none of it is actually obscured underneath the image, but now both text and an image can share horizontal space.
+- Remember that, by default, block HTML elements occupy the entire width of the page, even if there isn't actual content that extends that far. In this case, you'll want to set the width so that your element's size more accurately represents its content and you don't have unnecessary white space. */
+
+/* This is all of the CSS style code */
+
+  body { 
+    font-size: 24pt; 
+    font-family: helvetica, sans-serif; 
+  } 
+
+  div { 
+    margin-bottom: 10px; 
+  } 
+
+  #default { 
+    background-color: red; 
+  } 
+
+  #floatRightNoWidth { 
+    background-color: #d0d3d3; 
+    float: right; 
+  } 
+
+  #floatRightTooWide { 
+    background-color: #d0d3d3; 
+    float: right; 
+  } 
+
+  #noFloatWidthSet { 
+    background-color: #d0d3d3; 
+    width: 40%; 
+  } 
+
+  #noFloatClearRight { 
+    background-color: #d0d3d3; 
+    clear: right; 
+  } 
+
+  #floatRightWidthSet { 
+    background-color: #d0d3d3; 
+    width: 30%; 
+    float: right; 
+  } 
+
+  /* Clear (Once you have some elements floating things can get a little messy, and it's easy for floating objects to overlap. To prevent this you can use the "clear" property.) */
+  p { 
+    clear: both; 
+ } 
+
+ 

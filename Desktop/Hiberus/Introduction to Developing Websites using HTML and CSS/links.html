@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Links</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!--Absolute Link-->
+    <a href="http://www.microsoft.com">Microsoft</a>
+    <!--NOTE: If the user is linking to a page not on the current website, you usually want that link to open in a new tab. You can make this happen by adding the target attribute to the anchor element with a value of _blank like this-->
+    <a href="http://www.microsoft.com" target=" _blank">Microsoft</a>
+
+    <a href="http://www.google.com">Google</a>
+    <a href="http://www.google.com" target=" _blank">Google</a>
+
+    <!--Images As Link-->
+    <a href="http://microsoft.com" target=" _blank"
+      ><img src="images/MSLOGO.png" alt="Microsoft logo" />
+    </a>
+
+    <!--Relative Link (Same Level)-->
+    <!-- Example of a relative link that will take the user to the about page of the current website. -->
+    <a href="about.html">About Me</a>
+
+    <!--Relative Link (Level Below) ex:-->
+    <a href="/resume/about.html">About Me</a>
+
+    <!--Relative Link (Level Above) ex:-->
+    <a href="../about.html">About Me</a>
+
+    <!--Relative Link (Different Folder) ex:-->
+    <a href="../resume/about.html">About Me</a>
+
+    <!--Email Link-->
+    <a href="mailto:enbalog@gmail.com">Email Me</a>
+
+    <!--Bookmark Link-->
+    <!--First, you must create the bookmark. For example, if you wanted to link to the part of your page where additional resources are listed, you could create a bookmark like this by adding a unique id to the heading for the Additional Resources part of your webpage.  -->
+    <h3 id="AR">Additional Resources</h3> 
+    <!--Next, create a link to this bookmark-->
+    <a href="#AR">View Additional Resources</a>
+
+</body>
+</html>

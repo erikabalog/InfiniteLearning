@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multimedia</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!--Images: General-->
+    <img src="images/MSLOGO.png" alt="Microsoft logo" />
+    <!--You can also add a <title> attribute that provides more information about the image which appears when the user hovers their cursor over the image.-->
+    <img
+      src="images/MSLOGO.png"
+      alt="Microsoft logo"
+      title="Microsoft's current 4-color logo introduced in 2012."
+    />
+
+    <!--Figure <figure> and figure caption <figcaption> -->
+        <figure> 
+         <img src="images/MSLOGO.png" alt="Microsoft logo" title="Microsoft's current 4 color logo introduced in 2012."/> 
+         <br> 
+         <figcaption> 
+           The colors in the Microsoft logo each represent a different line of Microsoft products. 
+         </figcaption> 
+    <!--Picture <picture> and source <source> -->
+        <picture>
+            <source media="(min-width¨: 800px)" srcset="images/largecat800w.jpg">
+            <source media="(min-width¨: 600px)" srcset="images/mediumcat400w.jpg">
+            <img src="images/smallcat100w.jpg" alt="cat">
+        </picture>
+    <!--Images: Different types of drawn images -->
+    <!--Bitmap-->
+    <!--Bitmap images are drawn by indicating the colors (and gradations) of an arrangement of pixels. 
+    If you zoom in on a bitmap image, the individual pixels make smooth lines jagged. -->
+
+    <!--Scalable Vector Graphics <svg> -->
+        <svg width="300" height="200">
+            <rect width="200" height="100"/>
+        </svg>
+
+    <!--GIFs -->
+    <inframe src="http://www.contoso.com/"></inframe>
+
+    <!--Video-->
+    <video src="media/video.mp4" width="600" height="400">
+        <p>Tag describing the content of the video</p>
+    </video>
+
+    <!--Audio-->
+    <audio controls>
+        <source src="sound.mp3" type="audio/mps">
+    </audio>
+
+  </body>
+</html>

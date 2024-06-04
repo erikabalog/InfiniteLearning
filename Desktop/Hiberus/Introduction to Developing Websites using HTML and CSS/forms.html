@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {background-color: tan;}
+    </style>
+</head>
+<body>
+    <!--Text-->
+    <label>
+        Name: <input type="text" name="name" />
+    </label>
+    <br>
+
+    <!--Textarea-->
+    <label for="comments">
+        Comments, questions, and recipes? Thanks for sharing!
+    </label>
+    <br>
+    <textarea name="comments" rows="4" col="55" id="comments"></textarea>
+
+    <!--Search-->
+    <form action="http://www.bing.com/search.php" method="get">
+        <label>
+            Search:
+            <input type="search" name="search">
+        </label>
+    </form>
+    <br>
+
+    <!--Password-->
+    <label>
+        Password:
+        <input type="password" name="password">
+    </label>
+    <br>
+
+    <!--Email-->
+    <label>
+        Email:
+        <input type="email" name="email">
+    </label>
+    <br>
+
+    <!--Date-->
+    <label>
+        Birthdate:
+        <input type="date" name="birthdate">
+    </label>
+    <br>
+
+    <!--URL-->
+    <label>
+        Please enter the URL of your web site:
+        <input type="url" name="website">
+    </label>
+    <br>
+
+    <!--Radio-->
+    <p class="attention">My diet is mostly:
+        <input type="radio" name="diet" value="Vegan"> Vegan
+        <input type="radio" name="diet" value="Vegetarian"> Vegetarian
+        <input type="radio" name="diet" value="Omnivore"> Omnivore 
+    </p>
+    <br>
+
+    <!--Checkbox-->
+    <p>I am looking for...(check all that apply)</p>
+    <input type="checkbox" name="interest" value="Recipes"> Recipes
+    <input type="checkbox" name="interest" value="Nutrition information"> Nutrition information
+    <input type="checkbox" name="interest" value="Restaurant reviews"> Restaurant reviews
+    <input type="checkbox" name="interest" value="Food news"> Food news and trends 
+    <input type="checkbox" name="interest" value="Meals"> Meal plans
+    <br>
+
+    <!--Select-->
+    <p class="attention">
+        <label for="Portal">
+            I found this web site through a...
+        </label>
+        <select name="Portal" id="portal">
+            <option value="search">web search</option>
+            <option value="link">link form another site</option>
+            <option value="friend">friend</option>
+            <option value="other">other</option>
+        </select>
+    </p>
+    <br>
+
+    <!--File-->
+    <form action="http://www.contoso.com/upload.php" method="post">
+        <label>
+            Choose a file to upload:
+            <input type="file" name="userFile">
+        </label>
+        <input type="submit" name="Upload" value="Upload">
+    </form>
+    <br>
+
+    <!--Submit-->
+    <input type="submit" name="submit" value="Submit">
+    <br>
+
+    <!--Placeholders-->
+    <input type="text" name="name" placeholder="Name">
+    <textarea name="comments" rows="4" cols="55" id="comments"> Share your comments, questions, and recipes...
+    </textarea>
+    <br> 
+
+    <!--Fieldset-->
+    <form action="http://www.contoso.com/visitor.php" method="post">
+        <fieldset>
+            <legend>
+                Your info:
+            </legend>
+            <label>
+                Name:
+                <input type="text" name="name">
+            </label>
+            <br>
+            <label>
+                Email:
+                <input type="email" name="email">
+            </label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>
+                Please share the folowing:
+            </legend>
+            <p>
+                <label for="Portal">
+                    I found this web site through a...
+                </label>
+                <select name="Portal" id="portal">
+                    <option value="search">web search</option>
+                    <option value="link">link from another site</option>
+                    <option value="friend">friend</option>
+                    <option value="other">other</option>
+                </select>
+            </p>
+            <p class="attention">
+                My diet is mostly:
+                <label>
+                    <input type="radio" name="diet" value="Vegan"> Vegan
+                    <input type="radio" name="diet" value="Vegetarian"> Vegetarian
+                    <input type="radio" name="diet" value="Omnivore"> Omnivore
+                </label>
+            </p>
+            <p class="attention">
+                I am looking for...(check all apply)
+                <br>
+                <input type="checkbox" name="interest" value="Recipes"> Recipes
+                <input type="checkbox" name="interest" value="Nutrition information"> Nutrition information
+                <input type="checkbox" name="interest" value="Restaurant reviews"> Restaurant reviews
+                <input type="checkbox" name="interest" value="Food news"> Food news and trends
+                <input type="checkbox" name="interest" value="Meals"> Meal plans
+            </p>
+            <p>
+                <label for="Comment">
+                    Comments, questions, and recipes? Thanks for sharing!
+                </label>
+                <br>
+                <textarea name="comments" row="4" cols="55">
+                    Enter
+                </textarea>
+            </p>
+            <input type="checkbox" name="subscribe" checked="checked"> Subscribe me to your newsletter!
+            <br>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+</body>
+</html>
